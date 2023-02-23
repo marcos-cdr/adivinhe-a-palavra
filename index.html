@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adivinhe a palavra</title>
+</head>
+<body>
+    <div id="game">
+        <h1 id="dica"></h1>
+        <p id="chances">Chances: 5</p>
+        <div id="palavra"></div>
+        <div id="palpite">
+            <div id="teclado">
+                <div id="l1">
+                    <button id="Q" class="tecla" onclick="tentativa('Q')">Q</button>
+                    <button id="W" class="tecla" onclick="tentativa('W')">W</button>
+                    <button id="E" class="tecla" onclick="tentativa('E', 'É', 'Ê')">E</button>
+                    <button id="R" class="tecla" onclick="tentativa('R')">R</button>
+                    <button id="T" class="tecla" onclick="tentativa('T')">T</button>
+                    <button id="Y" class="tecla" onclick="tentativa('Y')">Y</button>
+                    <button id="U" class="tecla" onclick="tentativa('U', 'Ú')">U</button>
+                    <button id="I" class="tecla" onclick="tentativa('I', 'Í')">I</button>
+                    <button id="O" class="tecla" onclick="tentativa('O', 'Ó', 'Ô')">O</button>
+                    <button id="P" class="tecla" onclick="tentativa('P')">P</button>
+                </div>
+                <div id="l2">
+                    <button id="A" class="tecla" onclick="tentativa('A', 'Á')">A</button>
+                    <button id="S" class="tecla" onclick="tentativa('S')">S</button>
+                    <button id="D" class="tecla" onclick="tentativa('D')">D</button>
+                    <button id="F" class="tecla" onclick="tentativa('F')">F</button>
+                    <button id="G" class="tecla" onclick="tentativa('G')">G</button>
+                    <button id="H" class="tecla" onclick="tentativa('H')">H</button>
+                    <button id="J" class="tecla" onclick="tentativa('J')">J</button>
+                    <button id="K" class="tecla" onclick="tentativa('K')">K</button>
+                    <button id="L" class="tecla" onclick="tentativa('L')">L</button>
+                </div>
+                <div id="l3">
+                    <button id="Z" class="tecla" onclick="tentativa('Z')">Z</button>
+                    <button id="X" class="tecla" onclick="tentativa('X')">X</button> 
+                    <button id="C" class="tecla" onclick="tentativa('C')">C</button>
+                    <button id="V" class="tecla" onclick="tentativa('V')">V</button>
+                    <button id="B" class="tecla" onclick="tentativa('B')">B</button>
+                    <button id="N" class="tecla" onclick="tentativa('N')">N</button>
+                    <button id="M" class="tecla" onclick="tentativa('M')">M</button>
+                </div>
+            </div>
+            <label id="resultado"></label>
+            <button id="reset" onclick="location.reload()">Jogar novamente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
